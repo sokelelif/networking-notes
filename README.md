@@ -1,7 +1,7 @@
 # Network Notes  
 
-Bu repo, ağ güvenliği konularında öğrendiğim bilgileri içeren notlarımdan oluşmaktadır.  
-Güncellenmeye devam edecektir. Faydalı olması dileğiyle! ✨  
+Bu repo, ağ güvenliği konularında öğrendiğim bilgileri içeren notlarımdan oluşmaktadır. Güncellenmeye devam edecektir. 
+Faydalı olması dileğiyle! ✨  
 
 📌 **İçerik Konuları:**  
 - **Ağ Temelleri**: OSI modeli, ağ topolojileri, ağ kablolama, IPv4 & IPv6  
