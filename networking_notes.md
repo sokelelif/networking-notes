@@ -1,4 +1,4 @@
-# Temel Ağ Notları [CompTIA Network +]
+# Temel Ağ Notları
 
 ### Security Devices
 
@@ -47,42 +47,43 @@
 Özel ağ veya VPN, uzak ana bilgisayarlar tarafından şifreli bir bağlantı yoluyla özel bir ağa erişmek için kullanılır.
 VPN bağlantısı sağlandıktan sonra uzak bilgisayarlar yerel bir ana bilgisayar olarak görülür.
 
-###### VPN Types
+#### VPN Types
 1. The site-to-site VPN
 2. Remote access VPN (host-to-site VPN)
 3. Host-to-host VPN(SSL VPN)
 
 ***VPN ve Tünelleme teknolojileri ile ilişkili protokeller***
 
-###### Internet Protocol Security (IPSsec)
+##### Internet Protocol Security (IPSsec)
 
-OSI modelinin 3. katmanında ve daha üst katmanlarda çalışır.
-VPN bağlantısını güvence altına almak için IPsec, kimlik doğrulama başlık protokolüyle birlikte çalışabilir.
+- OSI modelinin 3. katmanında ve daha üst katmanlarda çalışır.
+- VPN bağlantısını güvence altına almak için IPsec, kimlik doğrulama başlık protokolüyle birlikte çalışabilir.
 
-###### Authentication Header (AH)
+##### Authentication Header (AH)
 
-IPsec protokolünün bir parçasıdır. Kimlik doğrulama hizmeti sunar, şifreleme sunmaz.
+- IPsec protokolünün bir parçasıdır. Kimlik doğrulama hizmeti sunar, şifreleme sunmaz.
 
-###### Encapsulating Security Payload (ESP)
+##### Encapsulating Security Payload (ESP)
 
-Kimlik doğrulaması yapar ve paketleri şifreler. VPN bağlantılarında sıkça kullanılır, IPsec protokolünün parçasıdır.
+- Kimlik doğrulaması yapar ve paketleri şifreler. VPN bağlantılarında sıkça kullanılır, IPsec protokolünün parçasıdır.
 
-###### Generic Routing Encapsulation (GRE)
+##### Generic Routing Encapsulation (GRE)
 
-Bir ağ üzerinden farklı protokolleri taşıyabilmeyi sağlayan bir tünelleme protokolü. Şifreleme sıkıştırma gibi özellikleri yok, site-to-site VPN tünelleri.
-*Kapsülleme*: GRE bir protokolün (ex: MPLS) başka bir protokol üzerinden taşınmasını sağlar. Örneğin IPv6 trafiği IPv4 üzerinden gönderilir.
-*Tünelleme*: GRE iki ağ cihazı arasında sanal bir tünel oluşturur. Bu tünel taşıdığı trafiği kapsülleyerek gönnderir.
+- Bir ağ üzerinden farklı protokolleri taşıyabilmeyi sağlayan bir tünelleme protokolü.
+- Şifreleme sıkıştırma gibi özellikleri yok, site-to-site VPN tünelleri.
+- *Kapsülleme*: GRE bir protokolün (ex: MPLS) başka bir protokol üzerinden taşınmasını sağlar. Örneğin IPv6 trafiği IPv4 üzerinden gönderilir.
+- *Tünelleme*: GRE iki ağ cihazı arasında sanal bir tünel oluşturur. Bu tünel taşıdığı trafiği kapsülleyerek gönnderir.
 
-###### Point-to-point tunelling protokol (PPTP) (eski bir VPN protokolü)
+##### Point-to-point tunelling protokol (PPTP) (eski bir VPN protokolü)
 
-PPTP, PPP (point-to-point protokol) üzerinden veri kapsülleyerek güvenli bir bağlantı oluşturur. MPPE şifreleme kullanır.
-! Güvenlik açıkları, zayıf şifreleme !
+- PPTP, PPP (point-to-point protokol) üzerinden veri kapsülleyerek güvenli bir bağlantı oluşturur. MPPE şifreleme kullanır.
+- Güvenlik açıkları, zayıf şifreleme !
 
 **SSL (Secure Sockets Layer) ve TLS (Transport Layer Security)**
-İnternet üzerinden güvenli veri iletimi sağlayan şifreleme protokolleridir.
-TLS, SSL'nin daha güvenli devamı şeklinde geliştirildi.
-TLS, OSI modelinin 5. katmanında ve üstünde çalışır.
-SSL artık kullanılmıyor, HTTPS ve VPN bağlantıları TLS ile korunuyor.
+- İnternet üzerinden güvenli veri iletimi sağlayan şifreleme protokolleridir.
+- TLS, SSL'nin daha güvenli devamı şeklinde geliştirildi.
+- TLS, OSI modelinin 5. katmanında ve üstünde çalışır.
+- SSL artık kullanılmıyor, HTTPS ve VPN bağlantıları TLS ile korunuyor.
 
 ### Ağ Protokolleri 
 Cihazların birbirleriyle iletişim kurmasını sağlayan standartlar bütünü.
@@ -114,12 +115,12 @@ Cihazların birbirleriyle iletişim kurmasını sağlayan standartlar bütünü.
 - Tam şifreleme desteği sunar (RADIUS gibi sadece şifreyi değil, tüm oturum verisini şifreler.)
 
 **Remote Access Server (RAS)**
-Uzaktan erişim bağlantısı için gerekli yazılım ve donanım kombinasyonunun tamamı.
-Genellikle kurumsal ağlarda veya ISS'lerde (İnternet Servis Sağlayıcılar) kullanılır.
+- Uzaktan erişim bağlantısı için gerekli yazılım ve donanım kombinasyonunun tamamı.
+- Genellikle kurumsal ağlarda veya ISS'lerde (İnternet Servis Sağlayıcılar) kullanılır.
 
 ##### DHCP in the Network
 
-***Dynamic Host Configuration Protocol (DHCP)***: ağdaki cihazlara otomatik olarak IP adresi, alt ağ maskesi, varsayılan ağ geçidi ve DNS sunucusu gibi ağ yapılandırma bilgilerini atayan bir protokoldür.
+***Dynamic Host Configuration Protocol (DHCP)***: Ağdaki cihazlara otomatik olarak IP adresi, alt ağ maskesi, varsayılan ağ geçidi ve DNS sunucusu gibi ağ yapılandırma bilgilerini atayan bir protokoldür.
 - Cihazların ağ üzerinde iletişim kurmasını sağlayan iki farklı yöntem. (statik ve dinamik IP)
  
 1. ***Statik IP Yapılandırması***:
@@ -136,25 +137,25 @@ dejavantaj: hataya açık.
 - Kullanıcı ve yönetici müdahalesi gerekmez.
 
 ##### DHCP nasıl çalışır?
-1. ***DHCP Discover (keşif mesajı)***
-Cihaz IP adresine ihtiyaç duyar.
-Cihaz bir keşif mesajı gönderir.
-Bu mesaj cihazın IP adresi talebini içeren bir yayın (broadcast) mesajıdır.
-Bu yayın mesajı ağa bağlı tüm cihazlara iletilir.
+1. ***DHCP Discover (keşif mesajı)***: 
+- Cihaz IP adresine ihtiyaç duyar.
+- Cihaz bir keşif mesajı gönderir.
+- Bu mesaj cihazın IP adresi talebini içeren bir yayın (broadcast) mesajıdır.
+- Bu yayın mesajı ağa bağlı tüm cihazlara iletilir.
 
-2. ***DHCP Offer (teklif mesajı)*** 
-Ağda bulunan DHCP sunucusu keşif mesajını alır.
-Sunucu kullanılabilir bir IP adresi belirler.
-Bu adresi cihaza teklif etmek için bir teklif mesajı gönderir.
-Bu mesajda; önerilen IP adresi, alt ağ maskesi (subnet mask), varsayılan ağ geçidi (default gateway) ve DNS sunucusu bilgileri yer alır.
+2. ***DHCP Offer (teklif mesajı)***: 
+- Ağda bulunan DHCP sunucusu keşif mesajını alır.
+- Sunucu kullanılabilir bir IP adresi belirler.
+- Bu adresi cihaza teklif etmek için bir teklif mesajı gönderir.
+- Bu mesajda; önerilen IP adresi, alt ağ maskesi (subnet mask), varsayılan ağ geçidi (default gateway) ve DNS sunucusu bilgileri yer alır.
 
-3. ***DHCP Request (talep mesajı)***
-Cihaz sunucuda geçe teklif mesajını kabul ederse DHCP, reques adında mesaj gönderir.
+3. ***DHCP Request (talep mesajı)***: 
+- Cihaz sunucuda geçe teklif mesajını kabul ederse DHCP, reques adında mesaj gönderir.
 
-4. ***DHCP Acknowledgment (onay mesajı)***
-DHCP sunucusu gelen talebi onaylar ve cihaza onay mesajı gönderir. 
-Mesajda cihazın IP adresini kullanabileceği ve diğer yapılandırma verileri yer alır. 
-Cihaz artık ağda bu IP adresiyle iletişim kurabilir.
+4. ***DHCP Acknowledgment (onay mesajı)***: 
+- DHCP sunucusu gelen talebi onaylar ve cihaza onay mesajı gönderir. 
+- Mesajda cihazın IP adresini kullanabileceği ve diğer yapılandırma verileri yer alır. 
+- Cihaz artık ağda bu IP adresiyle iletişim kurabilir.
 
 DHCP bileşenleri:
 
