@@ -1,6 +1,6 @@
 # Network Notes  
 
-Bu repo, ağ güvenliği konularında öğrendiğim bilgileri içeren notlarımdan oluşmaktadır. Güncellenmeye devam edecektir. 
+Bu repo, ağ güvenliği konularında öğrendiğim bilgileri içeren notlarımdan oluşmaktadır. Güncellenmeye devam edecektir.     
 Faydalı olması dileğiyle! ✨  
 
 📌 **İçerik Konuları:**  
