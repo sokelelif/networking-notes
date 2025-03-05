@@ -158,14 +158,44 @@ dejavantaj: hataya açık.
 - Cihaz artık ağda bu IP adresiyle iletişim kurabilir.
 
 DHCP bileşenleri:
-
+1. DHCP Sunucusu: Cihazlara IP adresi ve ağ bilgilerini atar.
+2. DHCP İstemcisi: IP adresi almak isteyen cihazdır.
+3. DHCP Yönlendiricisi: DHCP mesajlarını yönlendiren cihazdır.
+4. DHCP Havuzu: IP adresi aralığıdır, istemcilere tahsis edilir.
+5. IP Kiralama: İstemciye belirli bir süre için atanan IP adresidir.
+6. DHCP Mesajları: İstemci ile sunucu arasındaki iletişim için kullanılan mesajlardır (DISCOVER, OFFER, REQUEST, ACK).
 
 ### DNS Service
+-  DNS (Domain Name System), internet üzerindeki alan adlarını (domain names) IP adreslerine çeviren bir sistemdir. İnsanlar için anlaşılır olan alan adları, bilgisayarlar için gerekli olan sayısal IP adreslerine dönüştürülür.
 
+*www. --> Subdomain* (alt alan adı)     
+*google. --> domain*        
+*com -->the top-level domain* (TLD - en üst düzey alan adı.) top-level domain --> ex: .com .org .net       
 
+**Local DNS Server:**
+- Yerel ağdaki ana bilgisayarların (cihazların) domain adlarını çözümleyen sunucudur. 
 
+- DNS does require an FQDN (Fully Qualified Domain Name) in order to function. --> FQDN, domain adının başından sonuna kadar belirtilmesi ex: www.google.com
+(DNS alan adlarını IP adreslerine doğru dönüştürebilmek için FQDN gerekli.)
 
+**Root Server:** 
+- İnternetin DNS sistemindeki en üst seviyedeki sunuculardır. Tüm TLD'lerin ilgili domain registry'lerinin adres bilgilerini tutaralar.
+- Registry (belirli bir top-Level Domain (TLD) altında yer alan tüm alan adlarının kayıtlarının tutulduğu merkezi veritabanı)
+- Bilinmeyen bir TLD için root server'a gidilir. Eğer bir domain adıyla ilgili bilgi yerel DNS sunucusunda bulunamazsa, sorgu kök (root) sunucularına iletilir ve root sunucusu, doğru TLD sunucusuna yönlendirir.
 
+*Yetkili ve Yetkisiz Sunucular*
+1. Yetkili --> yanıt veren sunucu, istenilen bilgiler buradan gelir. Orjinal kaydı tutar. Gerçek ve doğru bilgiler.
+2. Yetkisiz --> isteğe başka bir DNS sunucusundan aldığı bilgiyle cevap verir. Talep edene geri verilen üçüncü elden yanıt.
+
+**DNS Record (DNS Kaydı)**
+- Bir alan adının DNS sisteminde nasıl çözümleneceğini belirleyen bilgilerdir. DNS kayıtları, bir domain adı ile ilişkili IP adresi, mail sunucusu, yetkilendirilmiş sunucular gibi verileri içerir.
+1. A record (Address Record)    
+2. AAAA record     
+3. CNAME record (Canonical Name Record)    
+4. PTR record (Pointer Record)
+5. MIX record (Mail Exchange Record)        
+6. NS record (Name Server Record)       
+7. TXT record        
 
 
 
