@@ -197,6 +197,33 @@ DHCP bileşenleri:
 6. NS record (Name Server Record)       
 7. TXT record        
 
+### Dinamik DNS (DDNS)
+- Ana bilgisayar adı (hostname) aynı kalır ama IP adresi sürekli değişebilir.
+- DDNS, dinamik IP adreslerine sahip cihazların, belirli bir alan adı (domain) üzerinden erişilebilir olmasını sağlar.
+- IP adeğiştiğinde yazılım uygun DNS sağlayıcısına bir güncelleme gönderir.
 
-
+## Network Adress Translation (NAT)
+- Bir ağ üzerindeki cihazların özel IP adreslerini, internet gibi harici ağlarda kullanılan genel IP adresine dönüştüren bir teknolojidir.
+- IPv4 adreslerinin sınırlı olması nedeniyle yaygın olarak kullanılır.
+- NAT, bir yönlendirici (router) veya güvenlik duvarı (firewall) üzerinden trafiği yönlendirerek cihazların internete erişmesini sağlar.
+  - Statik NAT (Özel bir IP adresini belirli bir genel IP adresine eşler.)
+  - Dinamik NAT (Belirli bir özel IP adresi havuzunu genel IP adreslerine eşler.)
+  - PAT NAT (Port Address Translation) (Birden fazla özel IP adresini tek bir genel IP adresiyle yönlendirir.)
+ 
+ - Yönlendirilmeyen IP adresleri --> eğer bir cihaz bu IP adreslerinden birini kullanıyorsa doğrudan internete bağlanamaz proxy sunucuya veya NAT çözümüne ihtiyaç duyar. ex: 
+   - 10.0.0.0 – 10.255.255.255
+   - 172.16.0.0 – 172.31.255.255
+   - 192.168.0.0 – 192.168.255.255
     
+## WAN Technologies I
+1. Wide Area Network (WAN)
+- LAN'ları birbirine bağlar.
+- Bağlantılar genellikle ISS'ler (İnternet Servis Sağlayıcıları) tarafından sağlanır.
+- Özel IP adresleri ve yönlendirme protokolleri kullanılır.
+- ex: MPLS (Multiprotocol Label Switching), Metro Ethernet, SD-WAN.
+
+2. Local Area Network (LAN)
+- Genellikle özel IP adresleri kullanılır.
+- Kapsama alanı sınırlıdır.
+- Ağ yönetimi kolaydır.
+- Bağlanma çözümleri >> Wİ-Fİ, Ethernet.
